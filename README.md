@@ -46,5 +46,5 @@ If you reference this work, please use the following BibTeX entry:
   year={2025},
 }
 
-🙏 Contribution
-We welcome contributions from researchers and engineers specializing in model architecture, low-level GPU programming, and efficient deep learning systems. Please check the POC_SPEC.md (to be created) for detailed requirements or open an Issue to discuss your potential contribution.
+Contribution
+We welcome contributions from researchers and engineers specializing in model architecture, low-level GPU programming, and efficient deep learning systems. Please check the POC_SPEC.md for detailed requirements or open an Issue to discuss your potential contribution.
