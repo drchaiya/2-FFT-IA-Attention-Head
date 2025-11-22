@@ -4,6 +4,14 @@ import torch.nn.functional as F
 from einops import rearrange
 import math
 
+#
+try:
+    from .fused_kernel import FFTInspiredAttentionFused as FFTInspiredAttention
+    print("FFT-IA: Using fused Triton kernel — maximum performance")
+except ImportError:
+    print("Triton not available — falling back to PyTorch (slower)")
+    from .core_original import FFTInspiredAttention  # your original version
+
 class FFTInspiredAttention(nn.Module):
     """
     FFT-Inspired Attention (FFT-IA)
